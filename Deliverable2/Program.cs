@@ -19,16 +19,16 @@ namespace Deliverable2
 
 
             // convert to ACSII value
-            int sum;
+            int message;
             List<int> checksum = new List<int>();
             
             foreach (char letter in word)
             {
-                sum = (int)letter;
+                message = (int)letter;
                 
-                Console.Write(sum + "-");
+                Console.Write(message + "-");
 
-                checksum.Add(sum);
+                checksum.Add(message);
                              
             }
 
