@@ -21,21 +21,20 @@ namespace Deliverable2
             // convert to ACSII value
             int sum;
             List<int> checksum = new List<int>();
-            //int checksum = 0;
+            
             foreach (char letter in word)
             {
                 sum = (int)letter;
-                //checksum *= 5;
+                
                 Console.Write(sum + "-");
 
                 checksum.Add(sum);
                              
             }
+
+            // find checksum
             Console.WriteLine();
             Console.WriteLine("Message checksum is " + checksum.Sum(x => Convert.ToInt32(x)));
-            // find checksum
-            
-
             Console.ReadLine();
 
             goto Start;
@@ -47,4 +46,4 @@ namespace Deliverable2
  
     
             
-         //Console.Write(input[i] + Char.ConvertToUtf32 (input, i) + "-");
+         
